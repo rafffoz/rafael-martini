@@ -4,11 +4,13 @@
 	--clr-links: #eaab99;
 	--clr-dark: #333333;
 	--clr-white: #ffffff;
-	border: 6px solid var(--clr-main)
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	text-rendering: optimizeSpeed;
+	border: 6px solid var(--clr-main)
 }
 
 h1,
@@ -19,12 +21,17 @@ h4 {
 	letter-spacing: 1px;
 }
 
+h1 {
+	line-height: 1.5;
+}
+
 ul {
 	list-style: none;
 	padding-left: 0;
 }
 
 .rfm__layout-grid {
+	margin: .5%;
 	padding-block: 2rem;
 	gap: 4em;
 }
@@ -50,10 +57,9 @@ ul {
 }
 
 .rfm__bio-text>p {
-	line-height: 1.6;
+	line-height: 1.7;
 	font-weight: 300;
-	font-size: 1.1em;
-	letter-spacing: 1.1px
+	font-size: 1.2rem;
 }
 
 .rfm__bio-mail {
@@ -91,8 +97,10 @@ ul {
 
 .rfm__social-list {
 	display: flex;
+	justify-content: center;
 	list-style: none;
 	padding: 0;
+	margin-bottom: 2em;
 }
 
 .rfm__social-list li {
@@ -149,6 +157,15 @@ ul {
 	margin-bottom: 2em;
 }
 
+/* Footer */
+
+.rfm__footer {
+	background-color: var(--clr-main);
+	padding-block: 1em;
+	color: var(--clr-secodary);
+	text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
 
 	.rfm__mail-message {
@@ -170,7 +187,6 @@ ul {
 
 	.rfm__width {
 		max-width: 1200px; 
-		margin: 0 auto;
 	}
 
 	.rfm__header>section {
@@ -180,7 +196,7 @@ ul {
 }
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	h2 {
@@ -236,10 +252,6 @@ ul {
 		text-align: center;
 	}
 
-	.rfm__social-list {
-		justify-content: center;
-	}
-
 }
 
 @media only screen and (max-width: 560px) {
@@ -267,4 +279,3 @@ ul {
 	}
 
 }
-

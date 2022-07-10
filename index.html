@@ -25,164 +25,148 @@
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script>
-	function CopyToClipboard(id) {
-		var r = document.createRange();
-		r.selectNode(document.getElementById(id));
-		window.getSelection().removeAllRanges();
-		window.getSelection().addRange(r);
-		document.execCommand('copy');
-		window.getSelection().removeAllRanges();
-		$(".rfm__mail-message").text("Email copied!");
-	}
-	</script>
-
 	</head>
 	<body>
 
-	<header class="colorful rfm__header rfm__width rfm__layout-grid">
+<header class="colorful home__header">
+	<div class="container grid">
 		<section class="rfm__bio">
-			<div class="rfm__bio-block">
-				<img src="resources/images/rafaelmartini-s.jpg" class="rfm__bio-img" alt="Just so you know, this is a picture of me smiling to you">
-				<div class="rfm__bio-text">
-					<h1>Hi, I'm Rafael Martini and I love creating enjoyable visual solutions for the web.</h1>
-					<p class="rfm__bio-text">
-						I've decided that a teaser web presence is better than none at all, so here's a demo version of me. A little minimalistic, a little personal, and full of potential!
-	
-						For contact, please email me at <span id="mail" class="rfm__bio-mail">rafa.fmartini@gmail.com</span>
-					</p>
-					<button onclick="CopyToClipboard('mail');return false;" class="rfm__mail-btn">Press here to copy the e-mail</button>
-					<p class="rfm__mail-message"></p>
+				<div class="rfm__bio-block">
+					<img src="resources/images/rafaelmartini-s.jpg" class="rfm__bio-img" alt="Just so you know, this is a picture of me smiling to you">
+					<div class="rfm__bio-text">
+						<h1>Hi, I'm Rafael Martini and I love creating enjoyable visual solutions for the web.</h1>
+						<p class="rfm__bio-text">
+							I've decided that a teaser web presence is better than none at all, so here's a demo version of me. A little minimalistic, a little personal, and full of potential!
+		
+							For contact, please email me at <span id="mail" class="rfm__bio-mail">rafa.fmartini@gmail.com</span>
+						</p>
+						<button onclick="CopyToClipboard('mail');return false;" class="rfm__mail-btn">Press here to copy the e-mail</button>
+						<p class="rfm__mail-message"></p>
+					</div>
 				</div>
-			</div>
 
 		</section>
 
-		<section class="rfm__skills">
-			<ul>
-				<li>
-					<h3>My Skills</h3>
-					<ul class="topic rfm__skills-sublist">
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Javascript</li>
-					</ul>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<h3>My Focus</h3>
-					<ul class="topic rfm__skills-sublist">
-						<li>Accessibility</li>
-						<li>Responsive Design</li>
-						<li>UX Design</li>
-						<li>UI Design</li>
-					</ul>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<h3>I've work with</h3>
-					<ul class="topic rfm__skills-sublist">
-						<li>.Net</li>
-						<li>Drupal</li>
-						<li>Wordpress</li>
-					</ul>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<h3>Softwares I use</h3>
-					<ul class="topic rfm__skills-sublist">
-						<li>Figma</li>
-						<li>Illustrator</li>
-						<li>Photoshop</li>
-						<li>Sublime</li>
-						<li>Visual Studio Code</li>
-					</ul>
-				</li>
-			</ul>
-			
-			</section>
-			
-		</header>
-
-
-<main class="rfm__main rfm__width rfm__layout-grid">
-
-	<section class="rfm__exp">
-		<h2 class="rfm__main-title">Professional Experience</h2>
 		<ul>
 			<li>
-				<p><strong>10.2019 - present date</strong></p>
-				<div class="d">
-					<h4>FIESC - Federação das Indústrias do Estado de Santa Catarina</h4>
-					<p><strong>Web Designer.</strong> Responsible for redesigning and maintaining the institutional website.</p>
-					<ul>
-						<li><a href="https://fiesc.com.br/" target="_blank" rel="noopener noreferrer">FIESC Website</a></li>
-						<li><a href="https://fiesc.com.br/radar" target="_blank" rel="noopener noreferrer">Radar Event Landing Page</a></li>
-						<li><a href="https://fiesc.com.br/101" target="_blank" rel="noopener noreferrer">BR-101 campaign Landing Page</a></li>
-						<li><a href="https://fiesc.com.br/brs" target="_blank" rel="noopener noreferrer">BRs campaign Landing Page</a></li>
-						<li><a href="https://sc.senai.br/piee/" target="_blank" rel="noopener noreferrer">PIEE courses Landing Page</a></li>
-					</ul>
-				</div>
+				<h2>Things I know</h2>
+				<ul class="list__tags">
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>
+					<li>Accessibility</li>
+					<li>Responsive Design</li>
+					<li>UX Design</li>						<li>UI Design</li>
+					<li>Figma</li>
+					<li>Illustrator</li>
+					<li>Photoshop</li>
+					<li>Sublime</li>
+					<li>Visual Studio Code</li>
+					<li>.Net</li>
+					<li>Drupal</li>						<li>Wordpress</li>
+				</ul>
 			</li>
 			<li>
-				<p><strong>01.2019 - 10.2019</strong></p>
-				<div class="d">
-					<h4>FREELANCE</h4>
-					<p><strong>Web Designer.</strong> Interface creation and front-end programing of websites.</p>
-					<ul>
-						<li><a href="https://fineconsultoria.com.br/" target="_blank" rel="noopener noreferrer">Fine Consultoria</a></li>
-						<li><a href="https://repense.traust.it/" target="_blank" rel="noopener noreferrer">Repense</a></li>
-						<li><a href="https://chiefsgroup.com.br/" target="_blank" rel="noopener noreferrer">Chiefs Group</a></li>
-						<li><a href="https://sortechortodontia.com/" target="_blank" rel="noopener noreferrer">Sortech</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<p><strong>03.2018 - 07.2018</strong></p>
-				<div class="d">
-					<h4>BARBER - Business Inteligence</h4>
-					<p><strong>Art Direction Internship.</strong> Creation of graphic pieces for social medias, campaigns, landing pages, e-mail marketings and presentations.</p>
-				</div>
-			</li>
-			<li>
-				<p><strong>11.2016 - 03.2018</strong></p>
-				<div class="d">
-					<h4>NUTED UFRGS</h4>
-					<p><strong>Web Designer.</strong> Creation of interface and front-end programing of Learning Object websites (Instructional Design), working alongside with the pedagogical and back-end development teams.</p>
-					<ul>
-						<li><a href="http://www.nuted.ufrgs.br/oa/socioavaep/" target="_blank" rel="noopener noreferrer">SocioAVA</a></li>
-						<li><a href="http://www.nuted.ufrgs.br/oa/intergera/index.html" target="_blank" rel="noopener noreferrer">InterGera</a></li>
-					</ul>
-				</div>
+				<h2>Other things I like</h2>
+				<ul class="list__tags">
+					<li>Movies of any kind</li>
+					<li>Riding my bike</li>
+					<li>Cool shows like Dr Who, Chuck and Community</li>
+					<li>Ask people how their morning routine are</li>
+					<li>Reading books and mangas</li>
+					<li>Listening to someone talking about something they're excited about</li>
+					<li>Animes I don't understand like Evangelion and Furi Kuri</li>
+				</ul>
 			</li>
 		</ul>
-	</section>
+	</div>
+</header>
 
-	<section class="size">
-		<h2 class="rfm__main-title">Education</h2>
-		<div>
-			<div>
-				<p><strong>02.2012 - 12.2018</strong></p>
-				<div class="d">
-					<h4>UFRGS - Federal University of Rio Grande do Sul</h4>
-					<p>Bachelor Degree in Visual Design</p>
-				</div>
-			</div>
-			<div>
-				<p><strong>08.2015 - 05.2016</strong></p>
-				<div class="d">
-					<h4>St. John’s University | Queens, New York</h4>
-					<p>Visting student in the Bachelor of Fine Arts in Graphic Design</p>
-					<p>GPA: 3.57</p>
-				</div>
-			</div>
-		</div>
+<main class="container">
+<!--
+	<section class="home__section">
+		<header>
+			<h2>Enough chitchat! Here are some of the projects I'm most proud about.</h2>
+		</header>
+		<ul>
+			<li>FINE</li>
+			<li>Atlas da Competitividade da Indústria</li>
+			<li>SC EXPO DEFENSE?</li>
+			<li>FIESC</li>
+			<li>BR101</li>
+			<li>Radar</li>
+		</ul>
 	</section>
+-->
+	<div class="home__section">
+		<div class="home__section">
+			<h2 class="title-medium">Professional Experience</h2>
+			<ul>
+				<li>
+					<p><strong>10.2019 - present date</strong></p>
+					<div class="home__section__extras">
+						<h3>FIESC - Federação das Indústrias do Estado de Santa Catarina</h3>
+						<p><strong>Web Designer.</strong> Responsible for redesigning and maintaining the institutional website.</p>
+						<ul>
+							<li><a href="https://fiesc.com.br/" target="_blank" rel="noopener noreferrer">FIESC Website</a></li>
+							<li><a href="https://fiesc.com.br/radar" target="_blank" rel="noopener noreferrer">Radar Event Landing Page</a></li>
+							<li><a href="https://fiesc.com.br/101" target="_blank" rel="noopener noreferrer">BR-101 campaign Landing Page</a></li>
+							<li><a href="https://fiesc.com.br/brs" target="_blank" rel="noopener noreferrer">BRs campaign Landing Page</a></li>
+							<li><a href="https://sc.senai.br/piee/" target="_blank" rel="noopener noreferrer">PIEE courses Landing Page</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p><strong>01.2019 - 10.2019</strong></p>
+					<div class="home__section__extras">
+						<h3>FREELANCE</h3>
+						<p><strong>Web Designer.</strong> Interface creation and front-end programing of websites.</p>
+						<ul>
+							<li><a href="https://fineconsultoria.com.br/" target="_blank" rel="noopener noreferrer">Fine Consultoria</a></li>
+							<li><a href="https://sortechortodontia.com/" target="_blank" rel="noopener noreferrer">Sortech</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p><strong>03.2018 - 07.2018</strong></p>
+					<div class="home__section__extras">
+						<h3>BARBER - Business Inteligence</h3>
+						<p><strong>Art Direction Internship.</strong> Creation of graphic pieces for social medias, campaigns, landing pages, e-mail marketings and presentations.</p>
+					</div>
+				</li>
+				<li>
+					<p><strong>11.2016 - 03.2018</strong></p>
+					<div class="home__section__extras">
+						<h3>NUTED UFRGS</h3>
+						<p><strong>Web Designer.</strong> Creation of interface and front-end programing of Learning Object websites (Instructional Design), working alongside with the pedagogical and back-end development teams.</p>
+						<ul>
+							<li><a href="http://www.nuted.ufrgs.br/oa/socioavaep/" target="_blank" rel="noopener noreferrer">SocioAVA</a></li>
+							<li><a href="http://www.nuted.ufrgs.br/oa/intergera/index.html" target="_blank" rel="noopener noreferrer">InterGera</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="home__section">
+			<h2 class="title-medium">Education</h2>
+			<ul>
+				<li>
+					<p><strong>02.2012 - 12.2018</strong></p>
+					<div class="home__section__extras">
+						<h3>UFRGS - Federal University of Rio Grande do Sul</h3>
+						<p>Bachelor Degree in Visual Design</p>
+					</li>
+				<li>
+					<p><strong>08.2015 - 05.2016</strong></p>
+					<div class="home__section__extras">
+						<h3>St. John’s University | Queens, New York</h3>
+						<p>Visting student in the Bachelor of Fine Arts in Graphic Design</p>
+						<p>GPA: 3.57</p>
+				</li>
+			</ul>
+		</div>
+	</div>
 </main>
 
 <footer class="rfm__footer rfm__width">
@@ -212,6 +196,9 @@
 		<p>© <script>document.write(new Date().getFullYear())</script> Rafael Martini</p>
 	</div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="resources/js/script.js"></script>
 
 	</body>
 </html>
